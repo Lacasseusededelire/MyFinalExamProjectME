@@ -1,0 +1,1 @@
+Ceci est un projet simple pour la SN de Versioning Git et Github d'un site web qui permet à l'utilisateur de changer la couleur de la page.

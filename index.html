@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changer la couleur de la page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s;
+        }
+        .color-picker {
+            margin-top: 20px;
+        }
+        .color-option {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Changer la couleur de la page</h1>
+    <div class="color-picker">
+        <div class="color-option" style="background-color: #FF5733;" onclick="changeColor('#FF5733')"></div>
+        <div class="color-option" style="background-color: #33FF57;" onclick="changeColor('#33FF57')"></div>
+        <div class="color-option" style="background-color: #3357FF;" onclick="changeColor('#3357FF')"></div>
+        <div class="color-option" style="background-color: #F333FF;" onclick="changeColor('#F333FF')"></div>
+        <div class="color-option" style="background-color: #33F3FF;" onclick="changeColor('#33F3FF')"></div>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
